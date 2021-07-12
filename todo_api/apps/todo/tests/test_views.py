@@ -1,7 +1,6 @@
 import pytest
 from rest_framework.test import APIClient
 from django.contrib.auth.models import User
-# from apps.todo.views import ToDoViewSet
 from apps.todo.models import ToDo
 
 @pytest.fixture

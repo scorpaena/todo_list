@@ -17,13 +17,13 @@ def api_client():
 def test_user_signup(db, api_client):
     response = api_client().post('/user/signup/',
         data = {
-            "username": "foo",
+            "username": "foo_signup",
             "password1": "bar123$%",
             "password2": "bar123$%",
         }
     )
     assert response.status_code == 201
-    assert User.objects.last().id == 1
+    assert User.objects.last().username == "foo_signup"
 
 def test_user_login(api_client, user):
     response = api_client().post('/user/login/',
