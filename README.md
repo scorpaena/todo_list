@@ -2,7 +2,7 @@ Abstract
 --------
 This is a simple todo list application.
 It is made using Django/DRF framework and represents simple application, where users can make an items in todo list with title and description.
-For data storage the PostgreSQL database is utilized.
+For data storage the PostgreSQL database may be utilized.
 
 Requirements
 ------------
@@ -11,7 +11,7 @@ Requirements
 3. Create new database `todo` in PostgreSQL.
 2. Run the migration:
   `python manage.py migrate`
-3. The project uses default insecure SECRET_KEY. Make sure to create `.env` file according to the `.env.example` (don't forget to include the following parameters: SECRET_KEY, DATABASE_USER, DATABASE_PASS). Also refer to [this link](https://www.youtube.com/watch?v=5iWhQWVXosU&t=0s) for detailed information (note: for Ubuntu use `.bashrc` instead of `.bash_profile`).
+3. Make sure to create `.env` file in your project root directory according to the `.env.example`.
 
 Instructions
 ------------
